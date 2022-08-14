@@ -1,11 +1,45 @@
 apiVersion: v1
 entries:
+  minio:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2021.6.17
+    created: "2022-08-14T10:06:01.321189172Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Bitnami Object Storage based on MinIO&reg; is an object storage server,
+      compatible with Amazon S3 cloud storage service, mainly used for storing unstructured
+      data (such as photos, videos, log files, etc.)
+    digest: 1d5a5b8a893fba67496a7d86f7760c519276f16d8cf352f850568cff84c4f8ac
+    home: https://github.com/bitnami/charts/tree/master/bitnami/minio
+    icon: https://bitnami.com/assets/stacks/minio/img/minio-stack-220x234.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: minio
+    sources:
+    - https://github.com/bitnami/bitnami-docker-minio
+    - https://min.io
+    urls:
+    - https://mattiaperi.github.io/helm-chart/minio-7.1.9.tgz
+    version: 7.1.9
   postgresql:
   - annotations:
       category: Database
     apiVersion: v2
     appVersion: 11.13.0
-    created: "2022-08-14T09:42:57.664965837Z"
+    created: "2022-08-14T10:06:01.325294804Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -39,7 +73,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.8.5
-    created: "2022-08-14T09:42:57.668856865Z"
+    created: "2022-08-14T10:06:01.32829858Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -67,7 +101,7 @@ entries:
   reportportal:
   - apiVersion: v1
     appVersion: 5.7.2
-    created: "2022-08-14T09:42:57.68867117Z"
+    created: "2022-08-14T10:06:01.342776586Z"
     dependencies:
     - condition: postgresql.installdep.enable
       name: postgresql
@@ -98,4 +132,4 @@ entries:
     urls:
     - https://mattiaperi.github.io/helm-chart/reportportal-5.7.2.tgz
     version: 5.7.2
-generated: "2022-08-14T09:42:57.657162384Z"
+generated: "2022-08-14T10:06:01.316492165Z"
