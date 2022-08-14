@@ -5,7 +5,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.13.0
-    created: "2022-08-13T23:45:38.042058112+05:30"
+    created: "2022-08-14T09:42:57.664965837Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -32,12 +32,42 @@ entries:
     - https://github.com/bitnami/bitnami-docker-postgresql
     - https://www.postgresql.org/
     urls:
-    - https://karthick-kk.github.io/helm-charts/postgresql-10.9.4.tgz
+    - https://mattiaperi.github.io/helm-chart/postgresql-10.9.4.tgz
     version: 10.9.4
+  rabbitmq:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.8.5
+    created: "2022-08-14T09:42:57.668856865Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Open source message broker software that implements the Advanced
+      Message Queuing Protocol (AMQP)
+    digest: d99051f3c03ab0c381793c50a2469ce8198154dbee170fce62fa1872f0bcf87f
+    home: https://www.rabbitmq.com
+    icon: https://bitnami.com/assets/stacks/rabbitmq/img/rabbitmq-stack-220x234.png
+    keywords:
+    - rabbitmq
+    - message queue
+    - AMQP
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: rabbitmq
+    sources:
+    - https://github.com/bitnami/bitnami-docker-rabbitmq
+    urls:
+    - https://mattiaperi.github.io/helm-chart/rabbitmq-7.5.6.tgz
+    version: 7.5.6
   reportportal:
   - apiVersion: v1
     appVersion: 5.7.2
-    created: "2022-08-13T23:45:38.059435286+05:30"
+    created: "2022-08-14T09:42:57.68867117Z"
     dependencies:
     - condition: postgresql.installdep.enable
       name: postgresql
@@ -66,6 +96,6 @@ entries:
     sources:
     - https://github.com/reportportal/kubernetes
     urls:
-    - https://karthick-kk.github.io/helm-charts/reportportal-5.7.2.tgz
+    - https://mattiaperi.github.io/helm-chart/reportportal-5.7.2.tgz
     version: 5.7.2
-generated: "2022-08-13T23:45:38.037804037+05:30"
+generated: "2022-08-14T09:42:57.657162384Z"
